@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Pokemon API</title>
-
+    <title>Pokémon Search</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
-    <h1>Pokemon Search</h1>
 
-    <input
-     type="text" id="searchInput" placeholder="Enter a Pokemon name">
-    <button id="searchButton">Search</button>
-    
-    <div id="pokemonInfo"></div>
+    <header>
+        <h1>Pokémon Search</h1>
+    </header>
 
-    <script> src="script.js"</script>
-</body>    
+    <section class="hero">
+        <h2>Search.</h2>
+        <p>Discover Pokémon and their abilities.</p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Enter a Pokémon name..."
+            >
+            <button id="searchButton">Go</button>
+        </div>
+    </section>
+
+    <main>
+        <p id="message"></p>
+        
+        <div id="pokemonInfo"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
